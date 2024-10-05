@@ -50,7 +50,7 @@ const ChatBot = () => {
           <div className="title text-white text-lg">Chatbot de Veganismo</div>
           <h2 className="text-gray-400 text-sm">@VeganBot 🌱</h2> 
           <figure className="avatar">
-            <img src="../public/BOT.png" width="50" height="50" className="rounded-full" />
+            <img src="/BOT.png" width="50" height="50" className="rounded-full" />
           </figure>
         </div>
 
