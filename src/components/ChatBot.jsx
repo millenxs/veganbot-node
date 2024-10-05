@@ -45,9 +45,9 @@ const ChatBot = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="bg-gray-800 rounded-3xl shadow-2xl w-full max-w-md h-[600px] flex flex-col overflow-hidden">
-        <div className="bg-gray-700 p-4 flex justify-between items-center">
-          <div className="text-white text-lg">Chatbot de Veganismo</div>
+      <div className="bg-gray-800/70 rounded-3xl shadow-2xl w-full max-w-md h-[600px] flex flex-col overflow-hidden ">
+        <div className="bg-gray-700/70 p-4 flex justify-between items-center ">
+          <div className="title text-white text-lg">Chatbot de Veganismo</div>
           <h2 className="text-gray-400 text-sm">@VeganBot 🌱</h2> 
           <figure className="avatar">
             <img src="../public/BOT.png" width="50" height="50" className="rounded-full" />
@@ -72,7 +72,7 @@ const ChatBot = () => {
         </div>
 
        
-        <div className="bg-gray-700 p-2 flex">
+        <div className="bg-gray-700/70  p-2 flex">
           <input
 		  type="text"
             placeholder="Digite sua mensagem..."
