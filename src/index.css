@@ -1,0 +1,58 @@
+body {
+	background: #e8e8e8;
+	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+  }
+  
+  @keyframes chatAnimation {
+	0% {
+	  opacity: 0;
+	  transform: translateY(10px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  .chat-body .message {
+	animation: chatAnimation 0.3s ease-in-out;
+	animation-fill-mode: both;
+  }
+  
+  .chat-body .message:nth-child(even) {
+	animation-delay: 0.1s;
+  }
+  
+  .chat-body .message:nth-child(odd) {
+	animation-delay: 0.2s;
+  }
+  
+  /* Estilizando a barra de rolagem */
+  #chat::-webkit-scrollbar {
+	width: 8px;
+  }
+  
+  #chat::-webkit-scrollbar-track {
+	background: #4b5563;
+  }
+  
+  #chat::-webkit-scrollbar-thumb {
+	background-color: #7BCBD5;
+	border-radius: 10px;
+  }
+  
+  #chat::-webkit-scrollbar-thumb:hover {
+	background-color: #7BCBD5;
+  }
+  
+  .sendMessage {
+	color: #000;
+  }
+  
+  .container {
+	height: 500px;
+  }
