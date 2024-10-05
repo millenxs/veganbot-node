@@ -45,7 +45,7 @@ const ChatBot = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="bg-gray-800 rounded-3xl shadow-2xl w-full max-w-md h-[700px] flex flex-col overflow-hidden">
+      <div className="bg-gray-800 rounded-3xl shadow-2xl w-full max-w-md h-[600px] flex flex-col overflow-hidden">
         <div className="bg-gray-700 p-4 flex justify-between items-center">
           <div className="text-white text-lg">Chatbot de Veganismo</div>
           <h2 className="text-gray-400 text-sm">@VeganBot 🌱</h2> 
@@ -73,17 +73,18 @@ const ChatBot = () => {
 
        
         <div className="bg-gray-700 p-2 flex">
-          <textarea
+          <input
+		  type="text"
             placeholder="Digite sua mensagem..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && sendMessage()} 
             className="flex-grow p-2 bg-gray-600 text-white rounded-md outline-none resize-none mb-4"
             rows="3"
-          ></textarea>
+          ></input>
           <button
             onClick={sendMessage}
-            className="sendMessage ml-2 bg-[#7BCBD5] hover:bg-green-600 font-bold py-2 px-4 rounded-md mb-4"
+            className="sendMessage ml-2 bg-[#7BCBD5] hover:bg-[#4FB3C1] font-bold py-2 px-4 rounded-md mb-4"
           >
             Enviar
           </button>
