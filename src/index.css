@@ -43,12 +43,12 @@ body {
   }
   
   #chat::-webkit-scrollbar-thumb {
-	background-color: #7BCBD5;
+	background-color: #ABD373;
 	border-radius: 10px;
   }
   
   #chat::-webkit-scrollbar-thumb:hover {
-	background-color: #7BCBD5;
+	background-color: #ABD373;
   }
   
   .sendMessage {
