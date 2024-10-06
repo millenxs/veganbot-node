@@ -77,7 +77,7 @@ const ChatBot = () => {
 		{isTyping && (
             <div className="self-start bg-[#3a5321] text-white p-2 rounded-lg max-w-xs">
               <div className="typing-indicator">
-                VeganBot está digitando<span className="dots"><span>.</span><span>.</span><span>.</span></span>
+                Digitando<span className="dots"><span>.</span><span>.</span><span>.</span></span>
               </div>
             </div>
         )}
@@ -93,7 +93,7 @@ const ChatBot = () => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && sendMessage()} 
-            className="flex-grow p-2 bg-transparent ring-0 outline-none border border-neutral-500 text-neutral-900 placeholder-gray-700 text-sm rounded-lg focus:ring-gray-700 placeholder-opacity-50 focus:border-gray-800 w-full p-2.5 checked:bg-gray-800 text-white rounded-md outline-none resize-none mb-4"
+            className="flex-grow p-2 bg-transparent ring-0 outline-none border border-neutral-500 text-gray-900 placeholder-gray-700 text-sm rounded-lg focus:ring-gray-700 placeholder-opacity-50 focus:border-gray-800 w-full p-2.5 checked:bg-gray-800 rounded-md outline-none resize-none mb-4"
             rows="3"
           ></input>
           <button
