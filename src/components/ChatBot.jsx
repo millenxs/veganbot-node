@@ -33,7 +33,8 @@ const ChatBot = () => {
 	  setIsTyping(true);
 
       try {
-        const response = await axios.post('http://localhost:3000/api/message', { message: input });
+        const response = await axios.post('/api/message', { message: input });
+
         let botMessageText = response.data.reply;
 
 		botMessageText = cleanBotMessage(botMessageText);
