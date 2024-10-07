@@ -53,7 +53,7 @@ const ChatBot = () => {
     <div className="min-h-screen flex items-center justify-center">
       <div className="bg-white/10 rounded-3xl shadow-2xl w-full max-w-md h-[500px] flex flex-col overflow-hidden ">
         <div className="bg-[#95C457] p-4 flex justify-between items-center ">
-          <div className="title text-black text-lg">Chatbot de Veganismo</div>
+          <div className="title text-black">Chatbot de Veganismo</div>
           <h2 className="text-gray-700 text-sm">@VeganBot 🌱</h2> 
           <figure className="avatar">
             <img src="/favicon.png" width="50" height="50" className="rounded-full" />
